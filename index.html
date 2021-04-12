@@ -1,257 +1,340 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Logan VICTOIRE</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script
+      src="https://kit.fontawesome.com/957ca81e75.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-    <head>
-        <title>Logan VICTOIRE</title>
-        <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/957ca81e75.js" crossorigin="anonymous"></script>
-    </head>
+  <body>
+    <!-- Accueil -->
 
+    <header id="home">
+      <div class="user">
+        <h1>Logan VICTOIRE</h1>
+        <img
+          src="assets/img/72480668_10215212408244228_4113634846209736704_o.jpg"
+          alt="Ma photo de profil"
+        />
+        <p>Développeur Web</p>
+      </div>
+      <div class="scroll-btn">
+        <div class="scroll-bar">
+          <a href="#navbar"><span></span></a>
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/logan.victoire"
+          ><img src="assets/img/logo_facebook.png" alt="Logo Fb"
+        /></a>
+        <a href="https://www.linkedin.com/in/logan-victoire-898090184/"
+          ><img src="assets/img/logo_linkedin.png" alt="Logo Lk"
+        /></a>
+      </div>
+    </header>
 
-    <body>
+    <!-- Barre de navigation -->
 
-        <!-- Accueil -->
+    <navbar id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#"
+          ><i class="fa fa-home" aria-hidden="true"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#competences">COMPETENCES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#presentation">PRESENTATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiences">EXPERIENCES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formation">FORMATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">HOBBIES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </navbar>
 
-        <header id="home">
-            <div class="user">
-                <h1>Logan VICTOIRE</h1>
-                <img src="assets/img/72480668_10215212408244228_4113634846209736704_o.jpg" alt="Ma photo de profil">
-                <p>Développeur Web</p>
-            </div>
-            <div class="scroll-btn">
-                <div class="scroll-bar"><a href="#navbar"><span></span></a></div>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/logan.victoire"><img src="assets/img/logo_facebook.png" alt="Logo Fb"></a>
-                <a href="https://www.linkedin.com/in/logan-victoire-898090184/"><img src="assets/img/logo_linkedin.png" alt="Logo Lk"></a>
-            </div>
-        </header>
+    <!-- Compétences -->
 
-        <!-- Barre de navigation -->
+    <section id="competences">
+      <h2 class="text-center">Compétences</h2>
+      <h3 class="h3gauche">Professionnelles</h3>
+      <div class="comp">
+        <p>HTML / CSS</p>
+        <div class="conteneur-barre"><span class="barre c90"></span></div>
+      </div>
+      <div class="comp">
+        <p>PHP / MySQL</p>
+        <div class="conteneur-barre"><span class="barre c80"></span></div>
+      </div>
+      <div class="comp">
+        <p>JavaScript</p>
+        <div class="conteneur-barre"><span class="barre c80"></span></div>
+      </div>
+      <div class="comp">
+        <p>SQL</p>
+        <div class="conteneur-barre"><span class="barre c70"></span></div>
+      </div>
+      <div class="comp">
+        <p>Java</p>
+        <div class="conteneur-barre"><span class="barre c50"></span></div>
+      </div>
+    </section>
 
-        <navbar  id="navbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-                <a class="navbar-brand" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#competences">COMPETENCES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#presentation">PRESENTATION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experiences">EXPERIENCES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#formation">FORMATIONS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#hobbies">HOBBIES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </navbar>
+    <!-- Qui suis-je ? -->
 
-        <!-- Compétences -->
+    <section id="presentation">
+      <div class="prez">
+        <h2 class="text-center">Qui suis-je ?</h2>
+        <p>
+          A l'origine tourné vers le domaine de la vente client après un DUT
+          Technique de Commercialisation, je me réoriente aujourd'hui dans le
+          développement informatique.
+        </p>
+        <a href="assets/img/cv_Logan_Victoire.pdf" download
+          >Télécharger mon CV</a
+        >
+      </div>
+    </section>
 
-        <section id="competences">
-            <h2 class="text-center">Compétences</h2>
-            <h3 class="h3gauche">Professionnelles</h3>
-            <div class="comp">
-                <p>HTML / CSS</p>
-                <div class="conteneur-barre"><span class="barre c90"></span></div>
-            </div>
-            <div class="comp">
-                <p>PHP / MySQL</p>
-                <div class="conteneur-barre"><span class="barre c80"></span></div>
-            </div>
-            <div class="comp">
-                <p>JavaScript</p>
-                <div class="conteneur-barre"><span class="barre c80"></span></div>
-            </div>
-            <div class="comp">
-                <p>SQL</p>
-                <div class="conteneur-barre"><span class="barre c70"></span></div>
-            </div>
-            <div class="comp">
-                <p>Java</p>
-                <div class="conteneur-barre"><span class="barre c50"></span></div>
-            </div>
-        </section>
+    <!-- Expériences professionnelles -->
 
-        <!-- Qui suis-je ? -->
+    <section id="experiences">
+      <h2 class="text-center">Expériences professionnelles</h2>
 
-        <section id="presentation">
+      <div class="exp">
+        <div class="exp-logo">
+          <a href="#"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/fr/9/93/2000px-Konica_Minolta.png"
+              alt="Logo de Pierre Giraud"
+          /></a>
+        </div>
+        <div class="exp-info">
+          <h3>Stage Développeur Web/Web Mobile</h3>
+          <h4>Konica Minolta</h4>
+          <h4>Mai 2019 - Août 2019</h4>
+        </div>
+        <div class="exp-desc">
+          <p>
+            Réalisation d'une application Dashboard pour le Pôle innovation de
+            l'entreprise<br />
+            - Application intégralement conçue en javascritpt<br />
+            - Développement avec l'environnement Node.js<br />
+            - Mise en place d'une méthode Agile
+          </p>
+        </div>
+      </div>
+      <div class="exp">
+        <div class="exp-logo">
+          <a href="#"
+            ><img
+              src="https://i2.wp.com/www.lechotouristique.com/wp-content/uploads/2018/05/logo-webhelp.png?fit=250%2C250&ssl=1"
+              alt="Logo de LegalPlace"
+          /></a>
+        </div>
+        <div class="exp-info">
+          <h3>Conseiller commercial</h3>
+          <h4>Webhelp</h4>
+          <h4>2016 - 2017</h4>
+        </div>
+        <div class="exp-desc">
+          <p>
+            - Négociation de contrats avec client<br />
+            - Contrôle et correction des historiques d'appels
+          </p>
+        </div>
+      </div>
+      <div class="exp exp-end">
+        <div class="exp-logo">
+          <a href="#"
+            ><img
+              src="https://www.carredesoie.com/-/media/carredesoie/images/enseignes/logos/logo-jules.ashx"
+              alt="Logo de PrestaShop"
+          /></a>
+        </div>
+        <div class="exp-info">
+          <h3>Vendeur en prêt-à-porter</h3>
+          <h4>Jules</h4>
+          <h4>2015</h4>
+        </div>
+        <div class="exp-desc">
+          <p>
+            - Accueil et conseil clientèle.<br />
+            - Mise en place et entretien des rayons.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <div class="prez">
-                <h2 class="text-center">Qui suis-je ?</h2>
-                <p>A l'origine tourné vers le domaine de la vente client après un 
-                    DUT Technique de Commercialisation, je me réoriente aujourd'hui dans 
-                    le développement informatique.
-                </p>
-                <a href="assets/img/cv_Logan_Victoire.pdf" download>Télécharger mon CV</a>
-            </div>
+    <!-- Formation -->
 
-        </section>
+    <section id="formation">
+      <h2 class="text-center">Formation</h2>
+      <div class="exp">
+        <div class="exp-logo">
+          <a href="#"
+            ><img
+              src="https://i.pinimg.com/originals/56/0c/45/560c45f1668b44b4d81202728c28630b.png"
+              alt="Logo EDHEC"
+          /></a>
+        </div>
+        <div class="exp-info">
+          <h3>AFPA - 2020</h3>
+          <h4>Formation Concepteur Développeur d'Applications</h4>
+        </div>
+      </div>
+      <div class="exp">
+        <div class="exp-logo">
+          <a href="#"
+            ><img
+              src="https://i.pinimg.com/originals/56/0c/45/560c45f1668b44b4d81202728c28630b.png"
+              alt="Logo Dumont"
+          /></a>
+        </div>
+        <div class="exp-info">
+          <h3>AFPA - 2019</h3>
+          <h4>Formation Développeur Web</h4>
+        </div>
+      </div>
+      <div class="exp">
+        <div class="exp-logo">
+          <a href=""
+            ><img
+              src="https://arthurpehau.fr/wp-content/uploads/2019/03/profile.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="exp-info">
+          <h3>IUT - 2014-2015</h3>
+          <h4>DUT Année Spéciale Technique de Commercialisation</h4>
+        </div>
+      </div>
+      <div class="exp">
+        <div class="exp-logo">
+          <a href=""
+            ><img
+              src="https://lyceejeanracine.fr/wdps/wp-content/uploads/2017/06/jracine.jpg"
+              alt=""
+          /></a>
+        </div>
+        <div class="exp-info">
+          <h3>Lycée Jean Racine - 2012-2014</h3>
+          <h4>BTS Assistant de Gestion PME/PMI</h4>
+        </div>
+      </div>
+      <div class="exp exp-end">
+        <div class="exp-logo">
+          <a href=""
+            ><img
+              src="https://lyceejeanracine.fr/wdps/wp-content/uploads/2017/06/jracine.jpg"
+              alt=""
+          /></a>
+        </div>
+        <div class="exp-info">
+          <h3>Lycée Jean Racine - 2011-2012</h3>
+          <h4>Bac ES option Maths</h4>
+        </div>
+      </div>
+    </section>
 
-        <!-- Expériences professionnelles -->
+    <!-- Centres d'intérêts -->
 
-        <section id="experiences">
-            <h2 class="text-center">Expériences professionnelles</h2>
+    <section id="hobbies">
+      <h2 class="text-center">Centres d'intérêt</h2>
+      <figure class="interet">
+        <img
+          src="https://thumbs.dreamstime.com/b/mouvement-stylis%C3%A9-%C3%A0-la-mode-d-illustration-homme-courant-de-paralympic-ligne-silhouette-de-vecteur-de-75970202.jpg"
+          alt="Trail"
+        />
+        <figcaption>Sport</figcaption>
+      </figure>
+      <figure class="interet">
+        <img
+          src="https://image.spreadshirtmedia.net/image-server/v1/mp/compositions/T993A1MPA2181PT1X57Y35D15575510FS12555Cx000000%3Ax0091D3%3AxFF3484/views/1,width=1200,height=630,appearanceId=1,backgroundColor=F2F2F2,version=1574150007/une-vieille-bobine-de-film-avec-un-film-tapis-de-souris.jpg"
+          alt="Cuisine"
+        />
+        <figcaption>Cinéma</figcaption>
+      </figure>
+      <figure class="interet">
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/I/41uFn3zX4SL._AC_SY450_.jpg"
+          alt="Gaming"
+        />
+        <figcaption>Jeux vidéos</figcaption>
+      </figure>
+    </section>
 
-            <div class="exp">
-                <div class="exp-logo">
-                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/fr/9/93/2000px-Konica_Minolta.png" alt="Logo de Pierre Giraud"></a>
-                </div>
-                <div class="exp-info">
-                    <h3>Stage Développeur Web/Web Mobile</h3>
-                    <h4>Konica Minolta</h4>
-                    <h4>Mai 2019 - Août 2019</h4>
-                </div>
-                <div class="exp-desc">
-                    <p>
-                        Réalisation d'une application Dashboard pour le Pôle innovation de l'entreprise<br>
-                        - Application intégralement conçue en javascritpt<br>
-                        - Développement avec l'environnement Node.js<br>
-                        - Mise en place d'une méthode Agile
-                    </p>
-                </div>
-            </div>
-            <div class="exp">
-                <div class="exp-logo">
-                    <a href="#"><img src="https://i2.wp.com/www.lechotouristique.com/wp-content/uploads/2018/05/logo-webhelp.png?fit=250%2C250&ssl=1" alt="Logo de LegalPlace"></a>
-                </div>
-                <div class="exp-info">
-                    <h3>Conseiller commercial</h3>
-                    <h4>Webhelp</h4>
-                    <h4>2016 - 2017</h4>
-                </div>
-                <div class="exp-desc">
-                    <p>
-                        - Négociation de contrats avec client<br>
-                        - Contrôle et correction des historiques d'appels
-                    </p>
-                </div>
-            </div>
-            <div class="exp exp-end">
-                <div class="exp-logo">
-                    <a href="#"><img src="https://www.carredesoie.com/-/media/carredesoie/images/enseignes/logos/logo-jules.ashx" alt="Logo de PrestaShop"></a>
-                </div>
-                <div class="exp-info">
-                    <h3>Vendeur en prêt-à-porter</h3>
-                    <h4>Jules</h4>
-                    <h4>2015</h4>
-                </div>
-                <div class="exp-desc">
-                    <p>
-                        - Accueil et conseil clientèle.<br>
-                        - Mise en place et entretien des rayons.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <!-- Informations de contact -->
 
-        <!-- Formation -->
+    <section id="contact">
+      <div class="contact">
+        <h2 class="text-center">Informations de contact</h2>
+        <div class="text-center">
+          <p>Victoire Logan</p>
+          <p>5 rue des Commandeurs</p>
+          <p>Lotissement Parc des Templiers</p>
+          <p>80500 Montdidier</p>
+          <p>
+            <a href="mailto:logan.victoire@gmail.com"
+              >logan.victoire@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 
-        <section id="formation">
-            <h2 class="text-center">Formation</h2>
-            <div class="exp">
-                <div class="exp-logo">
-                    <a href="#"><img src="https://i.pinimg.com/originals/56/0c/45/560c45f1668b44b4d81202728c28630b.png" alt="Logo EDHEC"></a>
-                </div>
-                <div class="exp-info">
-                    <h3>AFPA - 2020</h3>
-                    <h4>Formation Concepteur Développeur d'Applications</h4>
-                </div>
-            </div>
-            <div class="exp">
-                <div class="exp-logo">
-                    <a href="#"><img src="https://i.pinimg.com/originals/56/0c/45/560c45f1668b44b4d81202728c28630b.png" alt="Logo Dumont"></a>
-                </div>
-                <div class="exp-info">
-                    <h3>AFPA - 2019</h3>
-                    <h4>Formation Développeur Web</h4>
-                </div>
-            </div>
-            <div class="exp">
-                <div class="exp-logo">
-                    <a href=""><img src="https://arthurpehau.fr/wp-content/uploads/2019/03/profile.png" alt=""></a>
-                </div>
-                <div class="exp-info">
-                    <h3>IUT - 2014-2015</h3>
-                    <h4>DUT Année Spéciale Technique de Commercialisation</h4>
-                </div>
-            </div>
-            <div class="exp">
-                <div class="exp-logo">
-                    <a href=""><img src="https://lyceejeanracine.fr/wdps/wp-content/uploads/2017/06/jracine.jpg" alt=""></a>
-                </div>
-                <div class="exp-info">
-                    <h3>Lycée Jean Racine - 2012-2014</h3>
-                    <h4>BTS Assistant de Gestion PME/PMI</h4>
-                </div>
-            </div>
-            <div class="exp exp-end">
-                <div class="exp-logo">
-                    <a href=""><img src="https://lyceejeanracine.fr/wdps/wp-content/uploads/2017/06/jracine.jpg" alt=""></a>
-                </div>
-                <div class="exp-info">
-                    <h3>Lycée Jean Racine - 2011-2012</h3>
-                    <h4>Bac ES option Maths</h4>
-                </div>
-            </div>
-        </section>
-
-        <!-- Centres d'intérêts -->
-
-        <section id="hobbies">
-            <h2 class="text-center">Centres d'intérêt</h2>
-            <figure class="interet">
-                <img src="https://thumbs.dreamstime.com/b/mouvement-stylis%C3%A9-%C3%A0-la-mode-d-illustration-homme-courant-de-paralympic-ligne-silhouette-de-vecteur-de-75970202.jpg" alt="Trail">
-                <figcaption>Sport</figcaption>
-            </figure>
-            <figure class="interet">
-                <img src="https://image.spreadshirtmedia.net/image-server/v1/mp/compositions/T993A1MPA2181PT1X57Y35D15575510FS12555Cx000000%3Ax0091D3%3AxFF3484/views/1,width=1200,height=630,appearanceId=1,backgroundColor=F2F2F2,version=1574150007/une-vieille-bobine-de-film-avec-un-film-tapis-de-souris.jpg" alt="Cuisine">
-                <figcaption>Cinéma</figcaption>
-            </figure>
-            <figure class="interet">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/41uFn3zX4SL._AC_SY450_.jpg" alt="Gaming">
-                <figcaption>Jeux vidéos</figcaption>
-            </figure>
-        </section>
-
-        <!-- Informations de contact -->
-
-        <section id="contact">
-            <div class="contact">
-                <h2 class="text-center">Informations de contact</h2>
-                <div class="text-center">
-                    <p>Victoire Logan</p>
-                    <p>5 rue des Commandeurs</p>
-                    <p>Lotissement Parc des Templiers</p>
-                    <p>80500 Montdidier</p>
-                    <p><a href="mailto:logan.victoire@gmail.com">logan.victoire@gmail.com</a></p>
-                </div>
-
-            </div>
-        </section>
-
-    </body>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
 </html>
