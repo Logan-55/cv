@@ -22,7 +22,7 @@ header,
 footer {
   width: 100%;
   padding: 20px 0px;
-  background: linear-gradient(rgba(0, 255, 100, 0.6), rgba(0, 255, 255, 0.6)), url("https://www.publicdomainpictures.net/pictures/280000/velka/background-design-2018-46.jpg") #4f4f4f;
+  background: linear-gradient(rgba(0, 255, 100, 0.6), rgba(0, 255, 255, 0.6));
   box-shadow: 0px 0px 15px #333;
   background-position: center;
   background-size: cover;
@@ -31,25 +31,22 @@ footer {
 header {
   border-bottom: 2px solid #fff;
   height: 100vh; }
-
-header h1,
-header p {
-  color: white;
-  font-size: 3em;
-  width: 90%;
-  margin: 0 auto; }
+  header h1,
+  header p {
+    color: white;
+    font-size: 3em;
+    width: 90%;
+    margin: 0 auto; }
 
 footer {
   border-top: 2px solid #fff; }
-
-footer p {
-  width: 90%;
-  margin: 0 auto;
-  color: #fff;
-  text-align: center; }
-
-footer a {
-  color: #fff; }
+  footer p {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center; }
+  footer a {
+    color: #fff; }
 
 /**************** SECTIONS ****************/
 section {
@@ -61,13 +58,11 @@ section {
   margin: 20px auto;
   /* box-shadow: 0px 0px 100px #bbb; */
   background-color: #fff; }
-
-section h2 {
-  margin: 20px 0;
-  width: 100%; }
-
-section > div {
-  width: 90%; }
+  section h2 {
+    margin: 20px 0;
+    width: 100%; }
+  section > div {
+    width: 90%; }
 
 /**************** SECTION ACCUEIL ****************/
 .user {
@@ -77,30 +72,27 @@ section > div {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute; }
-
-.user img {
-  width: 30%;
-  height: 30%;
-  border: 3px solid #fff;
-  box-shadow: 0px 0px 10px #777;
-  border-radius: 50%;
-  margin: 20px 20px 20px 20px; }
-
-.user h1 {
-  position: relative;
-  text-align: center;
-  font-weight: bold; }
+  .user img {
+    width: 30%;
+    height: 30%;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin: 20px 20px 20px 20px; }
+  .user h1 {
+    position: relative;
+    text-align: center;
+    font-weight: bold; }
 
 .social {
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-around;
   margin: 2vh 35vw auto 35vw; }
-
-.social img {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px; }
+  .social img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; }
 
 /**************** ICONE DE SOURIS ****************/
 .scroll-btn {
@@ -141,29 +133,26 @@ navbar {
 /**************** Qui SUIS-JE ? ****************/
 .prez {
   border-bottom: 2px dashed #ccc; }
-
-.prez a {
-  font-weight: bold;
-  width: 20vw;
-  display: block;
-  text-align: center;
-  padding: 10px;
-  margin: 10px auto 30px auto;
-  color: #fff;
-  background: linear-gradient(to left, #00ff64, cyan);
-  box-shadow: 0px 0px 10px #ccc;
-  border-radius: 5px; }
+  .prez a {
+    font-weight: bold;
+    width: 20vw;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background: linear-gradient(to left, #00ff64, cyan);
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px; }
 
 .contact-flex {
   display: flex;
   flex-flow: row wrap;
   align-items: center; }
-
-.contact-flex p:first-child {
-  flex: 0 0 40%; }
-
-.contact-flex p:last-child {
-  flex: 0 0 60%; }
+  .contact-flex p:first-child {
+    flex: 0 0 40%; }
+  .contact-flex p:last-child {
+    flex: 0 0 60%; }
 
 /**************** SECTION EXP ET FORMATION ****************/
 .exp {
@@ -172,31 +161,24 @@ navbar {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin-bottom: 10px; }
-
-.exp-info {
-  display: flex;
-  flex-flow: column wrap; }
-
-.exp-logo {
-  flex: 0 0 25%;
-  max-width: 100px; }
-
-.exp-info {
-  flex: 0 0 70%;
-  margin-left: auto; }
-
-.exp img {
-  width: 100%; }
-
-.exp h3 {
-  font-size: 1.2em; }
-
-.exp h4 {
-  font-size: 1em;
-  font-weight: normal; }
-
-.exp-end {
-  border-bottom: none; }
+  .exp-info {
+    display: flex;
+    flex-flow: column wrap; }
+  .exp-logo {
+    flex: 0 0 25%;
+    max-width: 100px; }
+  .exp-info {
+    flex: 0 0 70%;
+    margin-left: auto; }
+  .exp img {
+    width: 100%; }
+  .exp h3 {
+    font-size: 1.2em; }
+  .exp h4 {
+    font-size: 1em;
+    font-weight: normal; }
+  .exp-end {
+    border-bottom: none; }
 
 /**************** SECTION COMPETENCES ****************/
 .h3gauche {
@@ -206,9 +188,8 @@ navbar {
   display: flex;
   flex-flow: row wrap;
   margin-bottom: 10px; }
-
-.comp p {
-  flex: 0 0 40%; }
+  .comp p {
+    flex: 0 0 40%; }
 
 .conteneur-barre {
   height: 20px;
@@ -262,12 +243,11 @@ navbar {
   flex-flow: column wrap;
   align-items: center;
   margin-bottom: 20px; }
-
-.interet img {
-  max-width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 15px #555; }
+  .interet img {
+    max-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555; }
 
 /*VERSION BUREAU DU CV*/
 @media screen and (min-width: 980px) {
@@ -298,10 +278,10 @@ navbar {
     border: 2px solid #5affb2;
     box-shadow: 0px 0px 20px #666;
     text-decoration: none; }
-  .exp-logo {
+  -logo {
     flex: 0 0 10%; }
-  .exp-info,
-  .exp-desc {
+  -info,
+  -desc {
     flex: 0 0 85%;
     margin-left: auto; }
   .interet {
