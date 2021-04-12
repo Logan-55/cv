@@ -1,0 +1,22 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "CV numérique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Logan-55/cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Logan-55/cv/issues"
+  },
+  "homepage": "https://github.com/Logan-55/cv#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
