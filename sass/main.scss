@@ -1,15 +1,8 @@
-/*STYLES GENERAUX*/
-* {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 0;
-  margin: 0;
-  /*text-align: justify;*/
-  box-sizing: border-box;
-}
-body {
-  background: #ededed;
-}
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+
 p {
   font-size: 1em;
   line-height: 1.5em;
