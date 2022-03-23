@@ -1,0 +1,15 @@
+/**************** ICONE DE SOURIS ****************/
+
+@keyframes scrollMouse {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+}

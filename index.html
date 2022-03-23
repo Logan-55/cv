@@ -11,12 +11,12 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
-    />
+    /> -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script
@@ -28,33 +28,36 @@
   <body>
     <!-- Accueil -->
 
-    <header id="home">
-      <div class="user">
-        <h1>Logan VICTOIRE</h1>
-        <img
-          src="assets/img/72480668_10215212408244228_4113634846209736704_o.jpg"
-          alt="Ma photo de profil"
-        />
-        <p>Développeur Web</p>
+    <header class="header">
+      <div class="header__user-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary__main">Logan VICTOIRE</span>
+          <img
+            src="assets/img/72480668_10215212408244228_4113634846209736704_o.jpg"
+            class="header__user-box--photo"
+            alt="My profil picture"
+          />
+          <span class="heading-primary__sub">Développeur Web</span>
+        </h1>
       </div>
-      <div class="scroll-btn">
-        <div class="scroll-bar">
-          <a href="#navbar"><span></span></a>
-        </div>
-      </div>
-      <div class="social">
+      <!-- <div class="social">
         <a href="https://www.facebook.com/logan.victoire"
           ><img src="assets/img/logo_facebook.png" alt="Logo Fb"
         /></a>
         <a href="https://www.linkedin.com/in/logan-victoire-898090184/"
           ><img src="assets/img/logo_linkedin.png" alt="Logo Lk"
         /></a>
-      </div>
+      </div> -->
+      <a href="#navbar">
+        <div class="header__scroll-btn">
+          <span class="header__scroll-btn--bar"></span>
+        </div>
+      </a>
     </header>
 
     <!-- Barre de navigation -->
 
-    <navbar id="navbar">
+    <!-- <navbar id="navbar">
       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#"
           ><i class="fa fa-home" aria-hidden="true"></i
@@ -93,38 +96,40 @@
           </ul>
         </div>
       </nav>
-    </navbar>
+    </navbar> -->
 
     <!-- Compétences -->
 
-    <section id="competences">
-      <h2 class="text-center">Compétences</h2>
-      <h3 class="h3gauche">Professionnelles</h3>
-      <div class="comp">
-        <p>HTML / CSS</p>
-        <div class="conteneur-barre"><span class="barre c90"></span></div>
-      </div>
-      <div class="comp">
-        <p>PHP / MySQL</p>
-        <div class="conteneur-barre"><span class="barre c80"></span></div>
-      </div>
-      <div class="comp">
-        <p>JavaScript</p>
-        <div class="conteneur-barre"><span class="barre c80"></span></div>
-      </div>
-      <div class="comp">
-        <p>SQL</p>
-        <div class="conteneur-barre"><span class="barre c70"></span></div>
-      </div>
-      <div class="comp">
-        <p>Java</p>
-        <div class="conteneur-barre"><span class="barre c50"></span></div>
-      </div>
+    <section class="section-about">
+      <h2 class="heading-secondary">Compétences</h2>
+      <!-- <h3 class="h3gauche">Professionnelles</h3> -->
+      <!-- <div class="row">
+        <div class="comp">
+            <p>HTML / CSS</p>
+            <div class="conteneur-barre"><span class="barre c90"></span></div>
+        </div>
+        <div class="comp">
+            <p>PHP / MySQL</p>
+            <div class="conteneur-barre"><span class="barre c80"></span></div>
+        </div>
+        <div class="comp">
+            <p>JavaScript</p>
+            <div class="conteneur-barre"><span class="barre c80"></span></div>
+        </div>
+        <div class="comp">
+            <p>SQL</p>
+            <div class="conteneur-barre"><span class="barre c70"></span></div>
+        </div>
+        <div class="comp">
+            <p>Java</p>
+            <div class="conteneur-barre"><span class="barre c50"></span></div>
+        </div> -->
+        </div>
     </section>
 
     <!-- Qui suis-je ? -->
 
-    <section id="presentation">
+    <!-- <section id="presentation">
       <div class="prez">
         <h2 class="text-center">Qui suis-je ?</h2>
         <p>
@@ -136,11 +141,11 @@
           >Télécharger mon CV</a
         >
       </div>
-    </section>
+    </section> -->
 
     <!-- Expériences professionnelles -->
 
-    <section id="experiences">
+    <!-- <section id="experiences">
       <h2 class="text-center">Expériences professionnelles</h2>
 
       <div class="exp">
@@ -206,10 +211,10 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Formation -->
-
+    <!-- 
     <section id="formation">
       <h2 class="text-center">Formation</h2>
       <div class="exp">
@@ -277,10 +282,10 @@
           <h4>Bac ES option Maths</h4>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Centres d'intérêts -->
-
+    <!-- 
     <section id="hobbies">
       <h2 class="text-center">Centres d'intérêt</h2>
       <figure class="interet">
@@ -304,11 +309,11 @@
         />
         <figcaption>Jeux vidéos</figcaption>
       </figure>
-    </section>
+    </section> -->
 
     <!-- Informations de contact -->
 
-    <section id="contact">
+    <!-- <section id="contact">
       <div class="contact">
         <h2 class="text-center">Informations de contact</h2>
         <div class="text-center">
@@ -324,9 +329,9 @@
         </div>
       </div>
     </section>
-  </body>
+  </body> -->
 
-  <script
+  <!-- <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"
@@ -340,5 +345,5 @@
     src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"
-  ></script>
+  ></script> -->
 </html>

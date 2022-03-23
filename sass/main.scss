@@ -1,229 +1,99 @@
 @import "abstracts/variables";
 
+@import "base/animations";
 @import "base/base";
 @import "base/typography";
 
-p {
-  font-size: 1em;
-  line-height: 1.5em;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
+@import "layout/grid";
 
-/**************** HEADER & FOOTER ****************/
+@import "pages/home";
 
-header,
-footer {
-  width: 100%;
-  padding: 20px 0px;
-  background: linear-gradient(rgba(0, 255, 100, 0.6), rgba(0, 255, 255, 0.6));
-  box-shadow: 0px 0px 15px #333;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-header {
-  border-bottom: 2px solid #fff;
-  height: 100vh;
+// .social {
+//   /* border: 2px solid red; */
+//   display: flex;
+//   justify-content: space-around;
+//   //   margin: 2vh 35vw auto 35vw;
 
-  & h1,
-  & p {
-    color: white;
-    font-size: 3em;
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-footer {
-  border-top: 2px solid #fff;
-
-  & p {
-    width: 90%;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-  }
-  & a {
-    color: #fff;
-  }
-}
-
-/**************** SECTIONS ****************/
-
-section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 100%;
-  padding-bottom: 20px;
-  margin: 20px auto;
-  /* box-shadow: 0px 0px 100px #bbb; */
-  background-color: #fff;
-
-  & h2 {
-    margin: 20px 0;
-    width: 100%;
-  }
-  & > div {
-    width: 90%;
-  }
-}
-
-/**************** SECTION ACCUEIL ****************/
-
-.user {
-  /* border: 2px solid red; */
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-
-  & img {
-    width: 30%;
-    height: 30%;
-    border: 3px solid #fff;
-    box-shadow: 0px 0px 10px #777;
-    border-radius: 50%;
-    margin: 20px 20px 20px 20px;
-  }
-
-  & h1 {
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-  }
-}
-
-.social {
-  /* border: 2px solid red; */
-  display: flex;
-  justify-content: space-around;
-  margin: 2vh 35vw auto 35vw;
-
-  & img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-  }
-}
-
-/**************** ICONE DE SOURIS ****************/
-
-.scroll-btn {
-  height: 50px;
-  bottom: 20px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 2px solid #fff;
-  padding: 0 10px 0 10px;
-  margin: 0;
-  border-radius: 30px;
-}
-
-.scroll-bar span {
-  border: 2px solid #fff;
-  font-size: 1px;
-  border-radius: 30px;
-  padding: -10px auto auto auto;
-}
-
-.scroll-bar {
-  animation: mover 2s infinite;
-}
-@keyframes mover {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  70% {
-    transform: translate(0, 15px);
-  }
-  100% {
-    opacity: 0;
-  }
-}
+//   & img {
+//     border-radius: 50%;
+//     width: 40px;
+//     height: 40px;
+//   }
+// }
 
 /**************** NAVBAR ****************/
 
-navbar {
-  margin-bottom: 0px;
-}
+// navbar {
+//   margin-bottom: 0px;
+// }
 
 /**************** Qui SUIS-JE ? ****************/
 
-.prez {
-  border-bottom: 2px dashed #ccc;
+// .prez {
+//   border-bottom: 2px dashed #ccc;
 
-  & a {
-    font-weight: bold;
-    width: 20vw;
-    display: block;
-    text-align: center;
-    padding: 10px;
-    margin: 10px auto 30px auto;
-    color: #fff;
-    background: linear-gradient(to left, rgb(0, 255, 100), rgb(0, 255, 255));
-    box-shadow: 0px 0px 10px #ccc;
-    border-radius: 5px;
-  }
-}
+//   & a {
+//     font-weight: bold;
+//     width: 20vw;
+//     display: block;
+//     text-align: center;
+//     padding: 10px;
+//     margin: 10px auto 30px auto;
+//     color: #fff;
+//     background: linear-gradient(to left, rgb(0, 255, 100), rgb(0, 255, 255));
+//     box-shadow: 0px 0px 10px #ccc;
+//     border-radius: 5px;
+//   }
+// }
 
-.contact-flex {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+// .contact-flex {
+//   display: flex;
+//   flex-flow: row wrap;
+//   align-items: center;
 
-  & p:first-child {
-    flex: 0 0 40%;
-  }
-  & p:last-child {
-    flex: 0 0 60%;
-  }
-}
+//   & p:first-child {
+//     flex: 0 0 40%;
+//   }
+//   & p:last-child {
+//     flex: 0 0 60%;
+//   }
+// }
 
 /**************** SECTION EXP ET FORMATION ****************/
 
-.exp {
-  display: flex;
-  flex-flow: row wrap;
-  border-bottom: 1px solid #bbb;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+// .exp {
+//   display: flex;
+//   flex-flow: row wrap;
+//   border-bottom: 1px solid #bbb;
+//   padding-bottom: 10px;
+//   margin-bottom: 10px;
 
-  &-info {
-    display: flex;
-    flex-flow: column wrap;
-  }
-  &-logo {
-    flex: 0 0 25%;
-    max-width: 100px;
-  }
-  &-info {
-    flex: 0 0 70%;
-    margin-left: auto;
-  }
-  & img {
-    width: 100%;
-  }
-  & h3 {
-    font-size: 1.2em;
-  }
-  & h4 {
-    font-size: 1em;
-    font-weight: normal;
-  }
-  &-end {
-    border-bottom: none;
-  }
-}
+//   &-info {
+//     display: flex;
+//     flex-flow: column wrap;
+//   }
+//   &-logo {
+//     flex: 0 0 25%;
+//     max-width: 100px;
+//   }
+//   &-info {
+//     flex: 0 0 70%;
+//     margin-left: auto;
+//   }
+//   & img {
+//     width: 100%;
+//   }
+//   & h3 {
+//     font-size: 1.2em;
+//   }
+//   & h4 {
+//     font-size: 1em;
+//     font-weight: normal;
+//   }
+//   &-end {
+//     border-bottom: none;
+//   }
+// }
 
 /**************** SECTION COMPETENCES ****************/
 
@@ -286,66 +156,66 @@ navbar {
 }
 
 /*SECTION INTERETS*/
-.interet {
-  flex: 0 1 50%;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  margin-bottom: 20px;
+// .interet {
+//   flex: 0 1 50%;
+//   display: flex;
+//   flex-flow: column wrap;
+//   align-items: center;
+//   margin-bottom: 20px;
 
-  & img {
-    max-width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 15px #555;
-  }
-}
+//   & img {
+//     max-width: 80px;
+//     height: 80px;
+//     border-radius: 50%;
+//     box-shadow: 0px 0px 15px #555;
+//   }
+// }
 
 /*VERSION BUREAU DU CV*/
-@media screen and (min-width: 980px) {
-  section {
-    width: 80%;
-    /* box-shadow: 0px 0px 10px #bbb; */
-  }
-  a:hover {
-    color: #ea0;
-  }
-  header h1 {
-    width: 80%;
-  }
-  /*.prez, .contact{
-            flex: 0 0 45%;
-        }*/
-  .prez {
-    border-bottom: none;
-    /*border-right: 2px solid #ccc;*/
-    /*padding-right: 20px;*/
-    /*margin-left: auto;*/
-  }
-  .contact {
-    padding-left: 20px;
-    margin-right: auto;
-  }
-  .prez a {
-    border: 2px solid transparent;
-  }
-  .prez a:hover {
-    font-weight: bold;
-    color: rgb(90, 255, 178);
-    background: #fff;
-    border: 2px solid rgb(90, 255, 178);
-    box-shadow: 0px 0px 20px #666;
-    text-decoration: none;
-  }
-  &-logo {
-    flex: 0 0 10%;
-  }
-  &-info,
-  &-desc {
-    flex: 0 0 85%;
-    margin-left: auto;
-  }
-  .interet {
-    flex: 0 1 25%;
-  }
-}
+// @media screen and (min-width: 980px) {
+//   section {
+//     width: 80%;
+//     /* box-shadow: 0px 0px 10px #bbb; */
+//   }
+//   a:hover {
+//     color: #ea0;
+//   }
+//   header h1 {
+//     width: 80%;
+//   }
+//   /*.prez, .contact{
+//             flex: 0 0 45%;
+//         }*/
+//   .prez {
+//     border-bottom: none;
+//     /*border-right: 2px solid #ccc;*/
+//     /*padding-right: 20px;*/
+//     /*margin-left: auto;*/
+//   }
+//   .contact {
+//     padding-left: 20px;
+//     margin-right: auto;
+//   }
+//   .prez a {
+//     border: 2px solid transparent;
+//   }
+//   .prez a:hover {
+//     font-weight: bold;
+//     color: rgb(90, 255, 178);
+//     background: #fff;
+//     border: 2px solid rgb(90, 255, 178);
+//     box-shadow: 0px 0px 20px #666;
+//     text-decoration: none;
+//   }
+//   &-logo {
+//     flex: 0 0 10%;
+//   }
+//   &-info,
+//   &-desc {
+//     flex: 0 0 85%;
+//     margin-left: auto;
+//   }
+//   .interet {
+//     flex: 0 1 25%;
+//   }
+// }
