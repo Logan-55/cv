@@ -3,12 +3,6 @@
 .header {
   height: calc(100vh - 6rem);
 
-  background: linear-gradient(
-    to bottom,
-    $color-primary-light,
-    $color-primary-dark
-  );
-
   &__user-box {
     top: 50%;
     left: 50%;
