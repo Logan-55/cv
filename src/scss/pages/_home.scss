@@ -1,0 +1,76 @@
+.p {
+  height: 100vh;
+  transition: all 1s cubic-bezier(0.56, 0, 0.4, 0.99);
+  transform: translateX(50%);
+}
+.p.active {
+  transform: translateX(0);
+}
+
+#p--0 {
+  background-color: grey;
+}
+#p--1 {
+  background-color: green;
+}
+#p--2 {
+  background-color: yellow;
+}
+#p--3 {
+  background-color: blue;
+}
+
+// .natours {
+//   height: 100vh;
+//   background-color: green;
+// }
+
+/**************** SECTION ACCUEIL ****************/
+
+// .header {
+// height: calc(100vh - 6rem);
+
+// &__user-box {
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   position: absolute;
+
+//   text-align: center;
+
+//   &--photo {
+//     height: 30rem;
+//     margin: 8rem 0;
+
+//     border-radius: 50%;
+//     box-shadow: 0 0 1rem #777;
+//     border: 0.3rem solid $color-white;
+//   }
+// }
+
+// /**************** ICONE DE SOURIS ****************/
+
+// &__scroll-btn {
+//   height: 5rem;
+//   bottom: 5rem;
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   border: 0.3rem solid #fff;
+//   padding: 0 1rem;
+//   // margin-bottom: 3rem;
+//   border-radius: 1.5rem;
+
+//   //     animation: mover 2s infinite;
+//   &--bar {
+//     display: block;
+//     border: 0.2rem solid #fff;
+//     font-size: 1px;
+//     border-radius: 3rem;
+//     margin: 1rem 0;
+//     //   padding: -10px auto auto auto;
+
+//     animation: scrollMouse 2s infinite;
+//   }
+// }
+// }

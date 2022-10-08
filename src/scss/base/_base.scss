@@ -1,0 +1,50 @@
+/*STYLES GENERAUX*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /*text-align: justify;*/
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px au lieu de 16px (standard navigateur);
+}
+
+// TODO: Supprimer en prod
+// Axe vertical
+html::before {
+  content: "";
+  background-color: black;
+  width: 2px;
+  opacity: 0.3;
+
+  position: fixed;
+  left: calc(50% - 1px);
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+// Axe horizontal
+html::after {
+  content: "";
+  background-color: black;
+  opacity: 0.3;
+  height: 2px;
+
+  position: fixed;
+  top: calc(50% - 1px);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+body {
+  box-sizing: border-box; // child size = parent size - padding
+
+  height: 100vh; // Fixe une taille pour l'espace du body
+  cursor: none; // Supprime le curseur sur tout cet espace
+  overflow: hidden; //Supprime l'apparition de la barre de scrolling latérale
+}

@@ -1,0 +1,223 @@
+@charset "UTF-8";
+.cursor {
+  position: absolute;
+  border: 1px solid black;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/**
+ * s = sidebar
+ * i = item
+ * n = name
+ */
+.s {
+  /**
+  * Sidebar positionnée à gauche, à 50px du centre de la page
+  * hauteur : 100px, 
+  * largeur : si largeur fenêtre -> 1440px = 25px + 4vw = 25 + 4*14.4 = 82.6
+  * 
+  */
+  position: absolute;
+  left: 0;
+  top: calc(50% - 7.25rem);
+  width: 8vw;
+  height: 14.5rem;
+}
+
+.s__i {
+  position: relative;
+  height: 2.5rem;
+  z-index: 1;
+  transition: transform 0.5s;
+}
+
+.s__i:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.s__i-line {
+  position: absolute;
+  top: 0;
+  left: 4vw;
+  height: 2rem;
+  width: 2rem;
+  transition: transform 0.5s cubic-bezier(0.56, 0, 0.4, 0.99);
+}
+
+.s__i-line--small {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+.s__i-n {
+  position: relative;
+  display: inline;
+  top: 4px;
+  left: 12.5rem;
+  width: initial;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+  display: flex;
+}
+
+.s__i-n-letter {
+  transition: opacity 3s cubic-bezier(0.1, 1, 0.1, 1);
+  opacity: 0;
+}
+
+.s__i:hover .s__i-line {
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.56, 0, 0.4, 0.99);
+}
+
+.s__i:hover .s__i-n-letter {
+  opacity: 0.7;
+}
+
+.s__i:hover .s__i-n-letter--0 {
+  transition: opacity 0.6s cubic-bezier(0.1, 1, 0.1, 1);
+}
+
+.s__i:hover .s__i-n-letter--1 {
+  transition: opacity 0.6s cubic-bezier(0.1, 1, 0.1, 1) 0.1s;
+}
+
+.s__i:hover .s__i-n-letter--2 {
+  transition: opacity 0.6s cubic-bezier(0.1, 1, 0.1, 1) 0.2s;
+}
+
+.s__i:hover .s__i-n-letter--3 {
+  transition: opacity 0.6s cubic-bezier(0.1, 1, 0.1, 1) 0.3s;
+}
+
+/**************** ICONE DE SOURIS ****************/
+/*STYLES GENERAUX*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /*text-align: justify;*/
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html::before {
+  content: "";
+  background-color: black;
+  width: 2px;
+  opacity: 0.3;
+  position: fixed;
+  left: calc(50% - 1px);
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+html::after {
+  content: "";
+  background-color: black;
+  opacity: 0.3;
+  height: 2px;
+  position: fixed;
+  top: calc(50% - 1px);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  cursor: none;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: hsl(0deg, 0%, 0%);
+}
+
+.heading-primary {
+  text-transform: uppercase;
+  font-size: 15rem;
+  font-weight: 300;
+  position: absolute;
+  top: 20%;
+  left: 10rem;
+}
+
+.user {
+  position: absolute;
+  top: 75%;
+  left: 18rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.user__name {
+  text-transform: uppercase;
+}
+.user__name::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -6rem;
+  width: 5rem;
+  height: 1px;
+  background-color: black;
+}
+
+.p {
+  height: 100vh;
+  transition: all 1s cubic-bezier(0.56, 0, 0.4, 0.99);
+  transform: translateX(50%);
+}
+
+.p.active {
+  transform: translateX(0);
+}
+
+#p--0 {
+  background-color: grey;
+}
+
+#p--1 {
+  background-color: green;
+}
+
+#p--2 {
+  background-color: yellow;
+}
+
+#p--3 {
+  background-color: blue;
+}
+
+/**************** SECTION ACCUEIL ****************/
+/**************** NAVBAR ****************/
+/**************** Qui SUIS-JE ? ****************/
+/**************** SECTION EXP ET FORMATION ****************/
+/**************** SECTION COMPETENCES ****************/
+/*SECTION INTERETS*/
+/*VERSION BUREAU DU CV*/
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */

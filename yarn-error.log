@@ -1,0 +1,47 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add sass -D
+
+PATH: 
+  C:\Users\logan\OneDrive\Bureau\CV\node_modules\.bin;C:\Users\logan\OneDrive\Bureau\node_modules\.bin;C:\Users\logan\OneDrive\node_modules\.bin;C:\Users\logan\node_modules\.bin;C:\Users\node_modules\.bin;C:\node_modules\.bin;C:\Users\logan\AppData\Roaming\npm\node_modules\npm\node_modules\@npmcli\run-script\lib\node-gyp-bin;C:\Python310\Scripts\;C:\Python310\;C:\Python39\Scripts\;C:\Python39\;C:\Program Files\AdoptOpenJDK\jdk-15.0.0.36-hotspot\bin;C:\Program Files\AdoptOpenJDK\jdk-14.0.1.7-hotspot\bin;C:\Python38\Scripts\;C:\Python38\;C:\Program Files\AdoptOpenJDK\jdk-11.0.6.10-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;"C:\Program Files\Java\jdk-13.0.1\bin;";C:\wamp64\bin\php\php7.4.6;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\logan\AppData\Local\Microsoft\WindowsApps;C:\Users\logan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\logan\AppData\Roaming\Composer\vendor\bin;C:\Users\logan\AppData\Local\Yarn\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.2\bin;;C:\Users\logan\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  16.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\logan\OneDrive\Bureau\CV\node_modules\deasync\bin\win32-x64-node-16\deasync.node'
+
+npm manifest: 
+  {
+    "name": "cv",
+    "version": "1.0.0",
+    "description": "CV numérique",
+    "main": "index.js",
+    "scripts": {
+      "dev": "parcel src/index.html"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Logan-55/cv.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Logan-55/cv/issues"
+    },
+    "homepage": "https://github.com/Logan-55/cv#readme",
+    "devDependencies": {
+      "parcel-bundler": "^1.12.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,101 @@
+ul,
+li {
+  list-style: none;
+}
+/**
+ * s = sidebar
+ * i = item
+ * n = name
+ */
+
+.s {
+  /**
+  * Sidebar positionnée à gauche, à 50px du centre de la page
+  * hauteur : 100px, 
+  * largeur : si largeur fenêtre -> 1440px = 25px + 4vw = 25 + 4*14.4 = 82.6
+  * 
+  */
+
+  // TODO: recalculer top et height
+  position: absolute;
+  left: 0;
+  top: calc(50% - 14.5rem / 2);
+  width: calc(4vw + 2vw * 2);
+  height: 14.5rem;
+}
+
+.s__i {
+  position: relative;
+  height: 2.5rem;
+
+  z-index: 1;
+
+  transition: transform 0.5s;
+}
+
+.s__i:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.s__i-line {
+  position: absolute;
+  top: 0;
+  left: 4vw;
+  height: 2rem;
+  width: 2rem;
+  transition: transform 0.5s cubic-bezier(0.56, 0, 0.4, 0.99);
+  // overflow: hidden;
+}
+
+.s__i-line--small {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+.s__i-n {
+  // background-color: red;
+  position: relative;
+  display: inline;
+  top: 4px;
+  left: 12.5rem;
+
+  width: initial;
+
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+
+  display: flex;
+}
+
+.s__i-n-letter {
+  transition: opacity 3s cubic-bezier(0.1, 1, 0.1, 1);
+  opacity: 0;
+}
+
+.s__i:hover .s__i-line {
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.56, 0, 0.4, 0.99);
+}
+
+// Apparition des lettres avec décalage
+.s__i:hover .s__i-n-letter {
+  opacity: 0.7;
+}
+.s__i:hover .s__i-n-letter--0 {
+  transition: opacity 0.6s cubic-bezier(0.1, 1, 0.1, 1);
+}
+.s__i:hover .s__i-n-letter--1 {
+  transition: opacity 0.6s cubic-bezier(0.1, 1, 0.1, 1) 0.1s;
+}
+.s__i:hover .s__i-n-letter--2 {
+  transition: opacity 0.6s cubic-bezier(0.1, 1, 0.1, 1) 0.2s;
+}
+.s__i:hover .s__i-n-letter--3 {
+  transition: opacity 0.6s cubic-bezier(0.1, 1, 0.1, 1) 0.3s;
+}
